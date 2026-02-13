@@ -23,7 +23,8 @@ border-image-slice: 44;
 ```
 
 ```css interactive-example-choice
-border-image: url("/shared-assets/images/examples/border-florid.svg") round;
+border-image: url("https://mdn.github.io/shared-assets/images/examples/border-florid.svg")
+  round;
 border-image-slice: calc(50 / 184 * 100%) calc(80 / 284 * 100%) fill;
 border-image-width: 30px 48px;
 ```
@@ -45,11 +46,36 @@ border-image-width: 30px 48px;
   background: #fff3d4;
   color: black;
   border: 30px solid;
-  border-image: url("/shared-assets/images/examples/border-diamonds.png") 30
-    round;
+  border-image: url("https://mdn.github.io/shared-assets/images/examples/border-diamonds.png")
+    30 round;
   font-size: 1.2em;
 }
 ```
+
+<div style="border: 1px solid var(--color-border-primary); border-radius: var(--elem-radius); overflow: hidden;">
+  <table style="width: 100%; table-layout: fixed; border: 0; border-collapse: separate; border-spacing: 0;">
+    <thead>
+      <tr>
+        <th style="width: 50%; border-bottom: 1px solid var(--color-border-primary);">Try it options</th>
+        <th style="width: 50%; border-bottom: 1px solid var(--color-border-primary); border-left: 1px solid var(--color-border-primary);">Source image</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="vertical-align: top; border-bottom: 1px solid var(--color-border-primary);">Options 1-3</td>
+        <td style="vertical-align: top; text-align: center; border-bottom: 1px solid var(--color-border-primary); border-left: 1px solid var(--color-border-primary);">
+          <img src="https://mdn.github.io/shared-assets/images/examples/border-diamonds.png" alt="Diamond border source image used in Try it options 1 to 3." loading="lazy" width="90">
+        </td>
+      </tr>
+      <tr>
+        <td style="vertical-align: top;">Option 4</td>
+        <td style="vertical-align: top; text-align: center; border-left: 1px solid var(--color-border-primary);">
+          <img src="https://mdn.github.io/shared-assets/images/examples/border-florid.svg" alt="Florid border source image used in Try it option 4." loading="lazy" width="220">
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
 ## Syntax
 
@@ -173,7 +199,7 @@ div > div {
   height: 200px;
   border-width: 30px;
   border-style: solid;
-  border-image: url("/shared-assets/images/examples/border-diamonds.png");
+  border-image: url("https://mdn.github.io/shared-assets/images/examples/border-diamonds.png");
   border-image-slice: 30;
   border-image-repeat: round;
 }
